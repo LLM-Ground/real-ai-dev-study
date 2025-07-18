@@ -1,110 +1,119 @@
-# 🤖 AI 서비스 개발자 실무형 스터디 커리큘럼 (6개월, 24주)
+# LLM Ground: 실무형 AI 서비스 개발 스터디 (30주)
 
-AI 트렌드에 맞춘 실무형 커리큘럼입니다.  
-백엔드 개발자를 위한 AI/LLM 실전 중심 스터디입니다.
-
----
-
-## ✅ 목표
-- 머신러닝/딥러닝/LLM의 핵심 개념을 익히고  
-- 실제 모델을 활용한 서비스 개발까지 직접 경험
+> Java/Kotlin 백엔드 개발자를 위한 실전 LLM AI 서비스 학습 로드맵  
+> 기간: 30주 (주 1회 진행 기준)  
+> 대상: AI 서비스 실무 개발을 목표로 하는 백엔드 개발자  
+> 목표: 직접 AI 서비스를 설계, 구축, 배포할 수 있는 역량 확보
 
 ---
 
-## 🧭 전체 구성 개요
+## 🧭 커리큘럼 개요
 
-| 기간 | 주차 | 주제 | 목표 |
-|-------|------|-------|-------|
-| 1-4주 | 1~4주 | 수학 기초 완전 정복 | AI/딥러닝 기초 수학 완벽 이해 |
-| 5-8주 | 5~8주 | Python & 데이터 처리 실무 | Python 문법 + 데이터분석 라이브러리 숙달 |
-| 9-12주 | 9~12주 | 머신러닝 기본과 모델링 실습 | 머신러닝 알고리즘 이해 및 실습 |
-| 13-16주 | 13~16주 | 딥러닝 심화 및 프레임워크 실습 | 신경망 원리 + TensorFlow/PyTorch 심화 |
-| 17-20주 | 17~20주 | NLP & LLM 구조 이해와 실무 활용 | Transformer/LLM 개념 완전 정복 및 API 실습 |
-| 21-24주 | 21~24주 | LLM 미세조정 & AI 서비스 구현 및 배포 | 파인튜닝, 프롬프트, 서비스 기획과 배포까지 |
+- 총 30주, 이론/실습/프로젝트 병행
+- 실무 중심으로 Prompt, RAG, Embedding, API, Vector DB 등 전반 학습
+- Python 및 LangChain, LlamaIndex 실습 포함
+- 기초 수학 포함: 선형대수, 미분, 통계 기초
 
 ---
 
-## 📌 주차별 세부 계획
+## 📅 주차별 커리큘럼
 
-### 1~4주차 : 수학 기초 완전 정복
+### 🔰 Phase 1: AI 서비스 개발 기초 (1~5주)
 
-| 주차 | 주제 | 세부 내용 | 실습 | 추천 자료 |
-|------|------|-----------|------|-----------|
-| 1주차 | 벡터와 행렬 기초 | 벡터, 행렬 개념과 연산, 전치행렬, 단위행렬 | Python으로 벡터/행렬 연산 구현 | [모두의연구소 블로그](https://blog.naver.com/PostView.naver?blogId=moids&logNo=222345429144) |
-| 2주차 | 행렬곱과 응용 | 행렬곱 계산 원리, 특징, 행렬 곱을 활용한 데이터 변환 | 행렬곱 직접 구현 후 결과 검증 | [StatQuest YouTube](https://www.youtube.com/user/joshstarmer) |
-| 3주차 | 미분과 편미분 | 함수 미분, 편미분, 체인 룰 개념과 경사하강법 이해 | Python으로 미분, 경사하강법 구현 | [StatQuest YouTube](https://www.youtube.com/user/joshstarmer), [나도코딩 통계 기초](https://www.youtube.com/watch?v=7cPhj0FkhHU) |
-| 4주차 | 확률 및 통계 기초 | 정규분포, 평균, 분산, 소프트맥스 함수 이해 | Softmax 함수 구현, 간단한 확률 문제 | [나도코딩 통계 기초](https://www.youtube.com/watch?v=7cPhj0FkhHU) |
-
----
-
-### 5~8주차 : Python & 데이터 처리 실무
-
-| 주차 | 주제 | 세부 내용 | 실습 | 추천 자료 |
-|------|------|-----------|------|-----------|
-| 5주차 | Python 기초 문법 | 리스트, 딕셔너리, 함수, 클래스, 예외처리 | 문제풀이, 기본 문법 숙달 | [점프 투 파이썬](https://wikidocs.net/book/1) |
-| 6주차 | 함수형 프로그래밍 | 람다, map/filter, 제너레이터, 데코레이터 | 간단한 함수형 프로그램 작성 | [점프 투 파이썬](https://wikidocs.net/book/1) |
-| 7주차 | Numpy 기초 | 배열, 브로드캐스팅, 벡터 연산 | Numpy로 데이터 연산 실습 | [Numpy 10분 완성](https://wikidocs.net/146935) |
-| 8주차 | Pandas & 데이터 전처리 | Series, DataFrame, 데이터 필터링/집계 | 타이타닉 데이터셋 전처리 | [Pandas 공식 튜토리얼](https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html) |
+| 주차 | 주제 | 내용 |
+|------|------|------|
+| 1주차 | OT & LLM 개요 | 스터디 목표 설정, 생성형 AI 개요, 주요 용어 정리 |
+| 2주차 | ChatGPT, GPT 구조 | Transformer, Self-Attention 등 핵심 구조 개념 |
+| 3주차 | LLM 활용 아키텍처 | LLM API 호출 구조, 비즈니스 접목 사례 분석 |
+| 4주차 | Prompt Engineering | 프롬프트 설계 기초, few-shot, chain-of-thought |
+| 5주차 | Python 기초 | 실습용 Python 문법 정리 (Lambda, Dict 등) |
 
 ---
 
-### 9~12주차 : 머신러닝 기본과 모델링 실습
+### 🔍 Phase 2: LLM 활용 및 실전 설계 (6~14주)
 
-| 주차 | 주제 | 세부 내용 | 실습 | 추천 자료 |
-|------|------|-----------|------|-----------|
-| 9주차 | 머신러닝 개념 | 지도/비지도 학습, 회귀/분류, 데이터셋 구성 | 사이킷런 기본 사용법 학습 | [FastCampus 머신러닝 무료 강의](https://www.youtube.com/watch?v=ESg9g6_5U1M) |
-| 10주차 | 모델 평가 및 과적합 | 교차검증, 평가 지표(정확도, F1, RMSE 등) | 타이타닉 생존자 예측 모델 구현 | [Kaggle Titanic](https://www.kaggle.com/c/titanic) |
-| 11주차 | 주요 알고리즘1 | 선형회귀, 로지스틱 회귀 | Python으로 알고리즘 직접 구현 및 sklearn 비교 | [사이킷런 튜토리얼](https://scikit-learn.org/stable/tutorial/index.html) |
-| 12주차 | 주요 알고리즘2 | 의사결정나무, 랜덤포레스트, SVM | sklearn 모델 학습 및 튜닝 실습 | [사이킷런 튜토리얼](https://scikit-learn.org/stable/tutorial/index.html) |
-
----
-
-### 13~16주차 : 딥러닝 심화 및 프레임워크 실습
-
-| 주차 | 주제 | 세부 내용 | 실습 | 추천 자료 |
-|------|------|-----------|------|-----------|
-| 13주차 | 신경망 기본 | 퍼셉트론, 다층 신경망, 활성화 함수 | Python으로 기본 신경망 구현 | [모두의 딥러닝](https://book.naver.com/bookdb/book_detail.nhn?bid=11982967) |
-| 14주차 | 손실 함수와 역전파 | 손실 함수 종류, 역전파 알고리즘 원리 | 역전파 수식 직접 계산 | [모두의 딥러닝](https://book.naver.com/bookdb/book_detail.nhn?bid=11982967) |
-| 15주차 | 프레임워크 입문 | TensorFlow or PyTorch 설치 및 기본 사용법 | MNIST 숫자 분류 기본 코드 작성 | [PyTorch 기초 강의](https://www.youtube.com/watch?v=7dum3nCzX1A) |
-| 16주차 | 심화 실습 | CNN 기본 구조 이해 및 구현 | Fashion MNIST 분류기 완성 | [Colab 실습 노트북](https://colab.research.google.com/notebooks/intro.ipynb) |
+| 주차 | 주제 | 내용 |
+|------|------|------|
+| 6주차 | LangChain 기초 | LangChain 개념, PromptTemplate, Chains 실습 |
+| 7주차 | Embedding 기초 | 텍스트 벡터화 이해, cosine similarity 등 |
+| 8주차 | Vector DB 기초 | FAISS, Chroma 등 실습, 검색 정확도 비교 |
+| 9주차 | Retrieval 기반 RAG 개념 | RAG 구조 이해, Retrieval + Generation 설계 |
+| 10주차 | LLM 기반 챗봇 설계 | 유저 질문에 응답하는 챗봇 설계 실습 |
+| 11주차 | LangChain Agents | Tool 사용, OpenAPI 연동, AgentAction 이해 |
+| 12주차 | 문서 기반 RAG 서비스 | PDF/Notion 등 문서 기반 질의응답 서비스 설계 |
+| 13주차 | LlamaIndex 기본 | LlamaIndex vs LangChain 비교 및 실습 |
+| 14주차 | Agent vs RAG | RAG + Agent 통합 아키텍처 설계 패턴 소개 |
 
 ---
 
-### 17~20주차 : NLP & LLM 구조 이해와 실무 활용
+### ⚙️ Phase 3: 실무형 서비스 개발 및 운영 (15~24주)
 
-| 주차 | 주제 | 세부 내용 | 실습 | 추천 자료 |
-|------|------|-----------|------|-----------|
-| 17주차 | NLP 기초 | 토큰화, 임베딩, RNN, LSTM 개념 | 텍스트 전처리 코드 작성 | [한입에 쏙 NLP](https://wikidocs.net/book/2155) |
-| 18주차 | Transformer 구조 | Self-Attention, Multi-head Attention, Positional Encoding | 작은 Transformer 모듈 직접 구현 | [Jay Alammar 시각자료](https://jalammar.github.io/illustrated-transformer/) |
-| 19주차 | HuggingFace 활용 | 사전학습 모델 불러오기, 텍스트 생성/분류 | HuggingFace API로 간단 챗봇 만들기 | [HuggingFace 튜토리얼](https://huggingface.co/course) |
-| 20주차 | 프롬프트 튜닝 | 프롬프트 작성법, 요약/분석 API 만들기 | ChatGPT API 활용 실습 | [OpenAI Prompt Engineering Guide](https://github.com/openai/openai-cookbook) |
-
----
-
-### 21~24주차 : LLM 미세조정 & AI 서비스 구현 및 배포
-
-| 주차 | 주제 | 세부 내용 | 실습 | 추천 자료 |
-|------|------|-----------|------|-----------|
-| 21주차 | 미세조정 개념 | LoRA, QLoRA, PEFT 개념과 활용 | 간단한 파인튜닝 코드 실습 | [HuggingFace PEFT 문서](https://huggingface.co/docs/peft) |
-| 22주차 | 프롬프트 엔지니어링 | Few-shot, Chain-of-thought 기법 | 다양한 프롬프트 작성 및 평가 | [OpenAI Prompt Engineering](https://github.com/openai/openai-cookbook) |
-| 23주차 | AI 서비스 설계 | SpringBoot + Kotlin + AI API 연동 | 자동완성, 리뷰 요약 서비스 설계 | 내부 문서, 샘플 코드 |
-| 24주차 | 배포 및 발표 | Docker, FastAPI/Flask 배포 | AWS Lambda/EC2 연동, 최종 프로젝트 발표 | [Docker 공식 문서](https://docs.docker.com/), [AWS 공식 문서](https://aws.amazon.com/documentation/) |
+| 주차 | 주제 | 내용 |
+|------|------|------|
+| 15주차 | FastAPI 기초 | AI 서비스용 Python API 서버 구축 실습 |
+| 16주차 | OpenAI API 연동 | GPT API 연동, 속도 및 사용량 측정 |
+| 17주차 | 사용자 Context 관리 | Session 기반 대화 흐름 저장 구조 설계 |
+| 18주차 | RAG 성능 개선 전략 | HyDE, Reranking, Multi-query 기법 |
+| 19주차 | 메타데이터 필터링 | Query filtering, tag 기반 검색 정교화 |
+| 20주차 | 벡터 인덱스 최적화 | Index type 비교 (IVF, HNSW), latency 측정 |
+| 21주차 | Redis Vector Store 연동 | Redis w/ vector search 연동 실습 |
+| 22주차 | LangSmith 사용법 | LangChain 디버깅 및 Trace 관리 |
+| 23주차 | Open Source LLM (Mistral 등) | Llama3, Mistral, Ollama 환경 구축 |
+| 24주차 | 모델 경량화 전략 | Quantization, GGUF, LoRA 개념 실습 |
 
 ---
 
-## 🛠 운영 가이드
+### 🚀 Phase 4: 실전 프로젝트 (25~30주)
 
-- **진행 주기**: 주 1회, 2~3시간 스터디 진행  
-- **스터디 방식**  
-  - 각 주차별 학습 + 실습 과제 제출  
-  - 과제 결과 공유 및 코드 리뷰  
-  - 실무 연계 프로젝트 단계별 점검  
-- **커뮤니케이션 채널**: Slack/Discord/Notion 등으로 자료와 코드 공유  
-- **프로젝트**  
-  - 17주차부터 프로젝트 기획, 21주차부터 구현 및 배포  
-  - 24주차 최종 발표 및 코드 리뷰  
+| 주차 | 주제 | 내용 |
+|------|------|------|
+| 25주차 | 프로젝트 설계 | 주제 선정, 요구사항 정의, 아키텍처 초안 |
+| 26주차 | 프롬프트/검색 설계 | LLM Prompt & Retrieval 구조 확정 |
+| 27주차 | 벡터화 & Index 구축 | Embedding, Vector DB 구축 |
+| 28주차 | API 구축 & 통합 | API, 프론트 연동, 오류 대응 설계 |
+| 29주차 | 테스트 및 고도화 | Evaluation, 개선 반복 |
+| 30주차 | 발표 및 회고 | 프로젝트 발표 및 회고 공유 |
 
 ---
 
-궁금한 점이나 개선 요청 언제든 환영합니다!  
-함께 AI 서비스 개발자로 성장해요 🚀
+## 🛠️ 실습 도구 및 환경
+
+- Python 3.10+
+- LangChain / LlamaIndex
+- ChromaDB / FAISS / Redis Vector
+- OpenAI API / Ollama / Huggingface Hub
+- FastAPI / Docker
+
+---
+
+## 📚 추천 도서 & 자료
+
+### 기본 이론
+- [Deep Learning with Python (François Chollet)](https://www.oreilly.com/library/view/deep-learning-with/9781617294433/)
+- [LLM University by Cohere](https://university.cohere.com/)
+- [Dive into Deep Learning](https://d2l.ai/index.html)
+
+### 실습 & 프레임워크
+- [LangChain 공식 문서](https://docs.langchain.com/)
+- [LlamaIndex 공식 문서](https://docs.llamaindex.ai/)
+- [FastAPI 공식 문서](https://fastapi.tiangolo.com/)
+
+### RAG & Vector DB
+- [Retrieval-Augmented Generation paper (Lewis et al.)](https://arxiv.org/abs/2005.11401)
+- [Pinecone RAG Guide](https://www.pinecone.io/learn/rag/)
+- [Weaviate RAG 튜토리얼](https://weaviate.io/blog/rag-langchain)
+
+---
+
+## 🧑‍💻 운영 가이드
+
+- **진행방식**: 매주 1회 발표 + 실습 공유
+- **공통과제**: 매주 실습 과제 PR 또는 노션에 제출
+- **피드백**: 코드 리뷰 및 PR 기반 피드백
+- **문서화**: 매주 회고 작성 및 정리
+
+---
+
+## 📩 문의
+
+스터디/운영/내용 관련하여 궁금한 점은 이슈 또는 PR로 남겨주세요!
