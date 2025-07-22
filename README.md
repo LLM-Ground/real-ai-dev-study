@@ -1,133 +1,216 @@
-# 🧠 LLMGROUND: 실무형 LLM 기반 AI 서비스 개발 스터디 (35주)
-
-> **Python, 수학, 머신러닝/딥러닝 기초부터 RAG, Vector DB, LangChain, Agent, 실전 프로젝트까지!**
+# 🚀 AI 통합 커리큘럼 with 참고자료 (6~8개월)
 
 ---
 
-## 📌 운영 가이드
+## ✅ 1단계: 파이썬 프로그래밍 & 실습 입문 (2주)
 
-- **진행 방식**: 주 1회 스터디 + 개인 과제 + 실습 코드 공유  
-- **사용 언어/도구**: Python, Jupyter Notebook, LangChain, LlamaIndex, PyTorch, Scikit-learn, OpenAI API, Pinecone, Weaviate 등  
-- **공식 언어**: Python  
-- **권장 인원**: 3~6명  
-- **공유 채널**: GitHub, Discord, Notion  
-- **진행 형식**: `이론 학습 → 실습 → 발표 → 코드 리뷰`
+**학습 내용**
 
----
+- 파이썬 기본 문법: 변수, 조건문, 함수, 클래스
+- 표준 라이브러리: `re`, `json`, `requests`, `collections`
+- NumPy, Pandas 실습
 
-## 🗂️ 전체 커리큘럼 (35주)
+**추천 자료**
 
----
-
-### ✅ 1~4주차: Python & 기초 수학
-
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 1주차 | 파이썬 기초 | 자료형, 함수, 클래스, 예외 처리 |
-| 2주차 | 데이터 처리 & IO | 리스트/딕셔너리, 파일 읽기/쓰기, JSON |
-| 3주차 | 선형대수 | 벡터, 내적, 행렬곱 |
-| 4주차 | 미분 & 확률통계 | 함수 미분, 확률 분포, 평균/분산 |
+- [파이썬 코딩 도장](https://dojang.io/course/view.php?id=7)
+- [Python 공식 튜토리얼](https://docs.python.org/ko/3/tutorial/index.html)
+- [Pandas 10분 완성 튜토리얼](https://pandas.pydata.org/docs/user_guide/10min.html)
 
 ---
 
-### ✅ 5~8주차: LLM 기본 이해
+## ✅ 2단계: 수학 기초 for AI (3개월)
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 5주차 | Transformer 구조 | Attention, Decoder-only, BERT vs GPT |
-| 6주차 | Hugging Face | Transformers 라이브러리 실습 |
-| 7주차 | OpenAI API | gpt-3.5-turbo 사용, Completion 실습 |
-| 8주차 | Prompt Engineering | Zero/Few-shot, CoT, Role Prompting |
+**학습 내용**
 
----
+- 선형대수학, 통계, 미분/편미분
 
-### ✅ 9~12주차: RAG & Vector DB 실습
+**추천 자료**
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 9주차 | RAG 개념 | Retriever + Generator 구조 |
-| 10주차 | LangChain 기본 | prompt chain, retriever chain 실습 |
-| 11주차 | 벡터 DB 실습 | FAISS, Pinecone, cosine similarity |
-| 12주차 | LlamaIndex 비교 | LangChain vs LlamaIndex |
+- [AI를 위한 필수 수학 (교보문고)](https://product.kyobobook.co.kr/detail/S000213969776)
+- [Essence of Linear Algebra (3Blue1Brown)](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+- [Khan Academy - Statistics](https://www.khanacademy.org/math/statistics-probability)
 
 ---
 
-### ✅ 13~16주차: LangChain 고급 & Agent
+## ✅ 3단계: 데이터 분석 & 시각화 (2주)
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 13주차 | LangChain Memory | BufferMemory, ConversationChain |
-| 14주차 | Agent 구조 | ReAct, Zero-shot Agent 실습 |
-| 15주차 | Self Query & HyDE | Self-querying, Hypothetical Embedding |
-| 16주차 | Hybrid Search | Dense + Sparse, BM25 + Embedding |
+**학습 내용**
 
----
+- EDA, 시각화 (`Matplotlib`, `Seaborn`, `Plotly`)
 
-### ✅ 17~20주차: 실무 서비스 설계
+**추천 자료**
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 17주차 | 멀티턴 대화 시스템 | FAQ 챗봇 설계 및 구현 |
-| 18주차 | 외부 API 연동 | Weather/Search API 활용 |
-| 19주차 | LangSmith | 트레이싱 및 관찰 도구 |
-| 20주차 | LangServe 배포 | FastAPI + LangChain 배포 |
+- [Fast Campus Pandas 강의](https://www.youtube.com/playlist?list=PLB0Tybl0UNf5Q7B0zqOqkz0uK3dKyn6km)
+- [Kaggle Pandas 튜토리얼](https://www.kaggle.com/learn/pandas)
+- [Seaborn 튜토리얼](https://seaborn.pydata.org/tutorial.html)
 
 ---
 
-### ✅ 21~25주차: 머신러닝/딥러닝 집중 과정
+## ✅ 4단계: 기초 머신러닝 입문 (4주)
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 21주차 | 머신러닝 기초 | 지도/비지도 학습, 회귀, 분류 |
-| 22주차 | 딥러닝 기초 | 퍼셉트론, MLP, 활성화 함수 |
-| 23주차 | Transformer 이해 | RNN vs LSTM vs Transformer |
-| 24주차 | NLP 응용 | Tokenization, fine-tuning |
-| 25주차 | 텍스트 생성 실습 | GPT2 fine-tuning 실습 |
+**학습 내용**
 
----
+- 지도/비지도 학습, 모델 평가
 
-### ✅ 26~30주차: 실전 활용 및 최적화
+**추천 자료**
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 26주차 | 문서 요약 & QA | Chunk → 요약 → 질문 응답 |
-| 27주차 | 코드 도우미 Agent | 코드 리뷰/설명 챗봇 |
-| 28주차 | 멀티모달 & Function Calling | Whisper, DALL·E API 연동 |
-| 29주차 | Vector DB 벤치마크 | FAISS vs Pinecone 성능 비교 |
-| 30주차 | LangSmith 최적화 | 평가 지표 기반 개선 |
+- [혼자 공부하는 머신러닝+딥러닝](https://product.kyobobook.co.kr/detail/S000001810330)
+- [Kaggle - Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning)
+- [Scikit-learn 튜토리얼](https://scikit-learn.org/stable/tutorial/index.html)
 
 ---
 
-### ✅ 31~35주차: 실전 프로젝트 + 배포
+## ✅ 5단계: 딥러닝 기초 with PyTorch (4주)
 
-| 주차 | 주제 | 학습 내용 |
-|------|------|-----------|
-| 31~33주차 | 프로젝트 진행 | 예시: FAQ 챗봇, 검색 Agent 등 |
-| 34주차 | 배포 최적화 | FastAPI + Docker + Cloud |
-| 35주차 | 발표 및 회고 | 기술 블로그 & 포트폴리오 작성 |
+**학습 내용**
 
----
+- MLP, CNN, RNN 구현 및 학습 loop 작성
 
-## 📚 추천 자료
+**추천 자료**
 
-- [The Hundred-Page Machine Learning Book](https://themlbook.com/)
-- [Deep Learning with Python - François Chollet](https://www.manning.com/books/deep-learning-with-python)
-- [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course)
-- [LangChain Cookbook](https://github.com/langchain-ai/langchain-cookbook)
-- [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling)
-- [Stanford CS224N](https://web.stanford.edu/class/cs224n/)
-- [Whisper GitHub](https://github.com/openai/whisper)
+- [PyTorch 공식 튜토리얼](https://pytorch.org/tutorials/)
+- [모두의 딥러닝 PyTorch](https://github.com/hunkim/PyTorchZeroToAll)
 
 ---
 
-## ✅ 활용 팁
+## ✅ 6단계: 고급 딥러닝 & PyTorch Lightning (2주)
 
-- 실습 코드는 `notebooks/` 폴더에 정리  
-- 발표자료는 `presentations/` 폴더에 업로드  
-- 회고 및 정리는 Notion 또는 `retrospective.md` 작성  
-- 팀 블로그/포트폴리오 연계 추천
+**학습 내용**
+
+- Lightning, Hydra, 전이학습
+
+**추천 자료**
+
+- [PyTorch Lightning Docs](https://lightning.ai/docs/pytorch/stable/)
+- [Hydra Docs](https://hydra.cc/docs/intro/)
 
 ---
 
-> **LLMGROUND는 실무형 AI 개발자를 위한 스터디입니다. 학습한 내용을 실습으로 연결하고, 실제 서비스 개발까지 이어가는 것이 목표입니다.**
+## ✅ 7단계: 머신러닝/딥러닝 심화 & 최적화 (3주)
 
+**학습 내용**
+
+- 하이퍼파라미터 튜닝, 앙상블, 모델 경량화
+
+**추천 자료**
+
+- [Optuna](https://optuna.org/)
+- [ONNX](https://onnx.ai/)
+- [TinyML 소개](https://www.edgeimpulse.com/blog/an-introduction-to-tinyml)
+
+---
+
+## ✅ 8단계: 생성형 AI (Generative AI) (2주)
+
+**학습 내용**
+
+- GAN, Diffusion 모델
+
+**추천 자료**
+
+- [GAN 기초 강의 (모두의 연구소)](https://www.youtube.com/watch?v=rzV5zE2B4jQ)
+- [Diffusion 모델 소개](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
+- [Hugging Face Diffusers](https://huggingface.co/docs/diffusers/index)
+
+---
+
+## ✅ 9단계: 자연어처리 (NLP) 기초 & 심화 (4주)
+
+**학습 내용**
+
+- 임베딩, Transformer, BERT, GPT
+
+**추천 자료**
+
+- [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/)
+- [Transformer 시각화](https://jalammar.github.io/illustrated-transformer/)
+
+---
+
+## ✅ 10단계: Computer Vision (CV) (2주)
+
+**학습 내용**
+
+- CNN 기반 분류, 탐지, 세그멘테이션
+
+**추천 자료**
+
+- [PyTorch Vision 튜토리얼](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html)
+- [OpenCV 튜토리얼](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
+
+---
+
+## ✅ 11단계: AI 경진대회 실전 실습 (4주)
+
+**학습 내용**
+
+- 회귀/분류 문제 실전 프로젝트
+
+**추천 자료**
+
+- [Kaggle 대회](https://www.kaggle.com/competitions)
+- [Dacon 대회](https://dacon.io/)
+- [MLWhiz 블로그](https://mlwhiz.com/)
+
+---
+
+## ✅ 12단계: LangChain & RAG 실전 프로젝트 (3~4주)
+
+**학습 내용**
+
+- LangChain 구조, RAG 시스템, LLM 연동
+
+**추천 자료**
+
+- [Udemy - LangChain 강의](https://www.udemy.com/course/nadocoding-langchain/)
+- [LangChain Docs](https://docs.langchain.com/docs/)
+- [LangChain vs LlamaIndex](https://sebastianraschka.com/blog/2023/langchain-vs-llamaindex.html)
+
+---
+
+## ✅ 13단계: AI Product Engineering (2주)
+
+**학습 내용**
+
+- FastAPI, Gradio, Streamlit, MLOps
+
+**추천 자료**
+
+- [FastAPI Docs](https://fastapi.tiangolo.com/)
+- [Gradio](https://www.gradio.app/guides/)
+- [Streamlit](https://docs.streamlit.io/)
+
+---
+
+## ✅ 14단계: Data Centric AI & 데이터 엔지니어링 (2주)
+
+**학습 내용**
+
+- 데이터 수집, 증강, 라벨링, Active Learning
+
+**추천 자료**
+
+- [Deepchecks - Data-centric AI](https://landing.deepchecks.com/data-centric-ai/)
+- [Snorkel](https://snorkel.ai/)
+- [Albumentations](https://albumentations.ai/)
+
+---
+
+## ✅ 15단계: 도메인 심화 트랙 (선택형) (2~4주)
+
+**도메인별 추천 스택**
+
+- OCR: Tesseract, CRAFT, CRNN, [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+- IR: BM25, Dense Retrieval, [Haystack](https://haystack.deepset.ai/)
+- Anomaly Detection: [PyOD](https://pyod.readthedocs.io/)
+- 추천 시스템: [Microsoft Recommenders](https://github.com/microsoft/recommenders)
+
+---
+
+## ✅ 16단계: 팀 프로젝트 (2개월)
+
+**예시 주제**
+
+- 대화형 뉴스 요약 챗봇
+- 여행/금융/의료 챗봇
+- QA 기반 검색 시스템
